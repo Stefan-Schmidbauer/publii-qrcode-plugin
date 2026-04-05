@@ -1,0 +1,107 @@
+{
+    "name": "URL QR Code",
+    "description": "Generates QR codes from URLs using a [qrcode] shortcode in post content",
+    "license": "MIT",
+    "author": "Stefan Schmidbauer",
+    "version": "1.0.0",
+    "scope": "site",
+    "minimumPubliiVersion": "0.39.0",
+    "usePluginSettingsView": false,
+    "config": [
+        {
+            "name": "syntaxHelp",
+            "type": "separator",
+            "label": "",
+            "group": "Usage",
+            "note": "<strong>Shortcode syntax:</strong><br><code>[qrcode url=\"https://example.com\"]</code><br><br><strong>All parameters:</strong><br><code>[qrcode url=\"...\" layout=\"left\" size=\"256\" url-display=\"short\" align=\"top\"]</code><br><br><table style='width:100%;border-collapse:collapse;margin:8px 0'><tr style='border-bottom:1px solid #ddd'><td style='padding:4px'><strong>url</strong></td><td style='padding:4px'>Required. The URL to encode</td></tr><tr style='border-bottom:1px solid #ddd'><td style='padding:4px'><strong>layout</strong></td><td style='padding:4px'><code>only</code> = QR code only &bull; <code>left</code> = QR left, URL right &bull; <code>right</code> = URL left, QR right</td></tr><tr style='border-bottom:1px solid #ddd'><td style='padding:4px'><strong>size</strong></td><td style='padding:4px'>Fixed: <code>64</code>, <code>128</code>, <code>192</code>, <code>256</code>, <code>384</code><br>Dynamic: <code>dot-2</code>, <code>dot-4</code>, <code>dot-6</code>, <code>dot-8</code> (module size fixed)</td></tr><tr style='border-bottom:1px solid #ddd'><td style='padding:4px'><strong>url-display</strong></td><td style='padding:4px'><code>as-is</code> = as entered &bull; <code>short</code> = without https:// &bull; <code>long</code> = with https://</td></tr><tr><td style='padding:4px'><strong>align</strong></td><td style='padding:4px'><code>top</code> &bull; <code>center</code> &bull; <code>bottom</code></td></tr></table>All parameters except <code>url</code> are optional and use the defaults configured below.<br><br><small>QR code generation powered by <a href='https://www.npmjs.com/package/qrcode-generator' target='_blank'>qrcode-generator</a> by Kazuhiko Arase (MIT).</small>",
+            "size": "no-line"
+        },
+        {
+            "name": "defaultSize",
+            "label": "Default QR code size",
+            "group": "Defaults",
+            "value": "192",
+            "type": "select",
+            "options": [
+                { "label": "64px", "value": "64" },
+                { "label": "128px", "value": "128" },
+                { "label": "192px", "value": "192" },
+                { "label": "256px", "value": "256" },
+                { "label": "384px", "value": "384" },
+                { "label": "Dot 2px", "value": "dot-2" },
+                { "label": "Dot 4px", "value": "dot-4" },
+                { "label": "Dot 6px", "value": "dot-6" },
+                { "label": "Dot 8px", "value": "dot-8" }
+            ]
+        },
+        {
+            "name": "defaultLayout",
+            "label": "Default layout",
+            "group": "Defaults",
+            "value": "only",
+            "type": "select",
+            "options": [
+                { "label": "QR code only", "value": "only" },
+                { "label": "QR left, URL right", "value": "left" },
+                { "label": "URL left, QR right", "value": "right" }
+            ]
+        },
+        {
+            "name": "defaultUrlDisplay",
+            "label": "Default URL display",
+            "group": "Defaults",
+            "value": "as-is",
+            "type": "select",
+            "options": [
+                { "label": "As entered", "value": "as-is" },
+                { "label": "Short (without https://)", "value": "short" },
+                { "label": "Long (with https://)", "value": "long" }
+            ]
+        },
+        {
+            "name": "defaultAlign",
+            "label": "Default vertical alignment (URL text)",
+            "group": "Defaults",
+            "value": "center",
+            "type": "select",
+            "options": [
+                { "label": "Top", "value": "top" },
+                { "label": "Center", "value": "center" },
+                { "label": "Bottom", "value": "bottom" }
+            ]
+        },
+        {
+            "name": "useCustomColor",
+            "label": "Use custom color (instead of text color)",
+            "group": "Appearance",
+            "value": false,
+            "type": "checkbox"
+        },
+        {
+            "name": "foregroundColor",
+            "label": "QR code color",
+            "group": "Appearance",
+            "value": "#000000",
+            "type": "colorpicker",
+            "dependencies": [
+                {
+                    "field": "useCustomColor",
+                    "value": "true"
+                }
+            ]
+        },
+        {
+            "name": "quietZone",
+            "label": "Quiet zone (modules around QR code)",
+            "group": "Appearance",
+            "value": "1",
+            "type": "select",
+            "options": [
+                { "label": "0 (none)", "value": "0" },
+                { "label": "1 module", "value": "1" },
+                { "label": "2 modules", "value": "2" },
+                { "label": "4 modules", "value": "4" }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <rect width="120" height="120" fill="#fff"/>
+  <!-- Top-left finder -->
+  <rect x="10" y="10" width="30" height="30" fill="#333" rx="2"/>
+  <rect x="14" y="14" width="22" height="22" fill="#fff"/>
+  <rect x="18" y="18" width="14" height="14" fill="#333" rx="1"/>
+  <!-- Top-right finder -->
+  <rect x="80" y="10" width="30" height="30" fill="#333" rx="2"/>
+  <rect x="84" y="14" width="22" height="22" fill="#fff"/>
+  <rect x="88" y="18" width="14" height="14" fill="#333" rx="1"/>
+  <!-- Bottom-left finder -->
+  <rect x="10" y="80" width="30" height="30" fill="#333" rx="2"/>
+  <rect x="14" y="84" width="22" height="22" fill="#fff"/>
+  <rect x="18" y="88" width="14" height="14" fill="#333" rx="1"/>
+  <!-- Data dots -->
+  <rect x="50" y="14" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="60" y="14" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="50" y="24" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="70" y="24" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="14" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="24" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="50" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="60" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="70" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="14" y="60" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="50" y="60" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="80" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="90" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="100" y="50" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="80" y="60" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="100" y="60" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="50" y="80" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="60" y="80" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="80" y="80" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="50" y="90" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="70" y="90" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="90" y="90" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="60" y="100" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="80" y="100" width="6" height="6" fill="#333" rx="1"/>
+  <rect x="100" y="100" width="6" height="6" fill="#333" rx="1"/>
+</svg>
