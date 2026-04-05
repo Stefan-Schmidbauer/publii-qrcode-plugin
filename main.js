@@ -102,7 +102,7 @@ class urlQrCode {
             qr.addData(href);
             qr.make();
         } catch (e) {
-            return `<!-- QR Code Error: ${e.message} -->`;
+            return `<!-- QR Code Error: ${this.escapeHtml(String(e.message))} -->`;
         }
 
         let svg = this.qrToSVG(qr, params.size, quietZone);

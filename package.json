@@ -1,0 +1,22 @@
+{
+    "name": "publii-plugin-url-qrcode",
+    "version": "1.0.0",
+    "description": "Publii plugin that generates QR codes from URLs using a [qrcode] shortcode",
+    "main": "main.js",
+    "author": "Stefan Schmidbauer",
+    "license": "MIT",
+    "keywords": [
+        "publii",
+        "plugin",
+        "qrcode",
+        "qr-code"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Stefan-Schmidbauer/publii-qrcode-plugin.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Stefan-Schmidbauer/publii-qrcode-plugin/issues"
+    },
+    "homepage": "https://github.com/Stefan-Schmidbauer/publii-qrcode-plugin#readme"
+}
