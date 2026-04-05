@@ -66,11 +66,12 @@ All shortcode parameters have configurable defaults in the Publii plugin setting
 
 ## Third-Party Library
 
-QR code generation is powered by **[qrcode-generator](https://www.npmjs.com/package/qrcode-generator)** by Kazuhiko Arase, a well-tested, dependency-free JavaScript QR code generator.
+QR code generation is powered by **[qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator)** by Kazuhiko Arase, a well-tested, dependency-free JavaScript QR code generator.
 
 - **Author:** Kazuhiko Arase
 - **License:** MIT
-- **Website:** http://www.d-project.com/
+- **GitHub:** [kazuhikoarase/qrcode-generator](https://github.com/kazuhikoarase/qrcode-generator)
+- **npm:** [qrcode-generator](https://www.npmjs.com/package/qrcode-generator)
 
 ## Author
 
@@ -79,3 +80,7 @@ QR code generation is powered by **[qrcode-generator](https://www.npmjs.com/pack
 ## License
 
 MIT — see [LICENSE](LICENSE)
+
+---
+
+*QR Code is a registered trademark of [DENSO WAVE INCORPORATED](https://www.denso-wave.com/).*
