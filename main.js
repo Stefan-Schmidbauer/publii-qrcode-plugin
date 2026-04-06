@@ -109,18 +109,18 @@ class urlQrCode {
         let displayUrl = this.formatURL(url, params.urlDisplay);
 
         if (params.layout === 'only') {
-            return `<div class="qrcode-container qrcode-only">${svg}</div>`;
+            return `<span class="qrcode-container qrcode-only">${svg}</span>`;
         }
 
         let alignStyle = `align-items:${ALIGN_CSS[params.align] || 'center'}`;
         let link = `<a class="qrcode-url" href="${this.escapeHtml(href)}">${this.escapeHtml(displayUrl)}</a>`;
 
         if (params.layout === 'left') {
-            return `<div class="qrcode-container qrcode-left" style="${alignStyle}">${svg}${link}</div>`;
+            return `<span class="qrcode-container qrcode-left" style="${alignStyle}">${svg}${link}</span>`;
         }
 
         // layout === 'right'
-        return `<div class="qrcode-container qrcode-right" style="${alignStyle}">${link}${svg}</div>`;
+        return `<span class="qrcode-container qrcode-right" style="${alignStyle}">${link}${svg}</span>`;
     }
 
     qrToSVG(qr, sizeParam, quietZone) {
