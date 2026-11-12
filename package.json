@@ -1,6 +1,6 @@
 {
     "name": "publii-plugin-url-qrcode",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "Publii plugin that generates QR codes from URLs using a [qrcode] shortcode",
     "main": "main.js",
     "author": "Stefan Schmidbauer",

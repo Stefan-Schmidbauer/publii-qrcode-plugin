@@ -3,7 +3,7 @@
     "description": "Generates QR codes from URLs using a [qrcode] shortcode in post content",
     "license": "MIT",
     "author": "Stefan Schmidbauer",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "scope": "site",
     "minimumPubliiVersion": "0.39.0",
     "usePluginSettingsView": false,
